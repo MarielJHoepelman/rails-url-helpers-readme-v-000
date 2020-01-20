@@ -26,3 +26,20 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 363ms (Views: 360.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 108.29.35.155 at 2020-01-20 22:22:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (8.6ms)
+Completed 200 OK in 40ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 108.29.35.155 at 2020-01-20 22:22:22 +0000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 243ms (Views: 237.1ms | ActiveRecord: 2.6ms)
+
+
